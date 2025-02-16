@@ -20,7 +20,6 @@ This repository provides a sequence-to-sequence (Seq2Seq) model for mapping **in
 - [Evaluation Results](#evaluation-results)
 - [Inference Example](#inference-example)
 - [Using on Hugging Face](#using-on-hugging-face)
-- [License](#license)
 - [Questions or Feedback?](#questions-or-feedback)
 
 ## Overview
@@ -90,7 +89,6 @@ print(f"Word: {sample_word}, Predicted root: {predicted_root}")
 ```
 
 ## Using on Hugging Face
-We have uploaded:
 
 - **Model File**: `seq2seq_stemmer.h5`  
   [Hugging Face: torquenada/malagasy-seq2seq-stemmer](https://huggingface.co/torquenada/malagasy-seq2seq-stemmer)
@@ -102,8 +100,7 @@ You can directly load these from Hugging Face:
 
 ```bash
 git lfs install
-git clone https://huggingface.co/<username>/<repo_name>
-cd <repo_name>
+git clone https://huggingface.co/torquenada/malagasy-seq2seq-stemmer OR https://huggingface.co/datasets/torquenada/dictionnaire-racines-malgache/
 ```
 
 Use the model in your code:
@@ -121,6 +118,6 @@ model = tf.keras.models.load_model("seq2seq_stemmer.h5")
 ```
 
 ## Questions or Feedback?
-Feel free to open an **issue** or **pull request** on GitHub, or contact us via **Hugging Face Discussions**.
+Feel free to open an **issue** or **pull request** on GitHub, or contact me via **Hugging Face Discussions**.
 
 **Enjoy exploring Malagasy morphology!**
